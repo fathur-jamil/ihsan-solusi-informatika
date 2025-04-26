@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "25231717-07a5-4053-a6ed-0d979d0ea9e1",
+		"name": "Ihsan Solusi Informatika",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43237231"
+	},
+	"item": [
+		{
+			"name": "Daftar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama\": \"Fathur\",\n    \"nik\": \"3211122706970001\",\n    \"no_hp\": \"085220406601\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8082/daftar",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8082",
+					"path": [
+						"daftar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tabung",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"no_rekening\": \"202504270052293\",\n    \"nominal\": 10000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8082/tabung",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8082",
+					"path": [
+						"tabung"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tarik",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"no_rekening\": \"202504270052293\",\n    \"nominal\": 10000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8082/tarik",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8082",
+					"path": [
+						"tarik"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cek Saldo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8082/saldo/202504270052293",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8082",
+					"path": [
+						"saldo",
+						"202504270052293"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
